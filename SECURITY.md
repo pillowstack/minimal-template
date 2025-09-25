@@ -5,7 +5,7 @@
 Please do not open a public issue. Instead:
 
 1. Use GitHub Security Advisories (Security > Advisories) if available in the repository.
-2. Alternatively, please email us at **security@vasa.me** with the subject line "Vulnerability Report: [Project Name]".
+2. Alternatively, please email us at **mail@pillowstack.dev** with the subject line "Vulnerability Report: [Project Name]".
 
 Please include as much detail as possible, including:
 
