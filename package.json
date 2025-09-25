@@ -1,0 +1,61 @@
+{
+  "name": "@pillowstack/minimal-template",
+  "version": "1.0.0",
+  "description": "A professional, minimal Node.js template with modern development tooling",
+  "keywords": [
+    "template",
+    "nodejs",
+    "eslint",
+    "prettier",
+    "husky",
+    "lint-staged",
+    "github-actions",
+    "boilerplate"
+  ],
+  "author": "Pillowstack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pillowstack/minimal-template.git"
+  },
+  "issues": {
+    "url": "https://github.com/pillowstack/minimal-template/issues"
+  },
+  "homepage": "https://github.com/pillowstack/minimal-template#readme",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky",
+    "clean": "rm -rf node_modules package-lock.json && npm install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.0.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.1",
+    "prettier": "^3.6.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,md,yml}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix"
+    ]
+  },
+  "changelog": {
+    "1.0.0": "Initial release"
+  }
+}
